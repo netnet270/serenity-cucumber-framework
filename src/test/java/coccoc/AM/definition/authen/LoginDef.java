@@ -9,13 +9,11 @@ public class LoginDef {
     @Steps
     LoginSteps loginSteps;
 
-    @Given("user login to qc site")
-    public void user_login_to_qc_site() {
+    @Given("{string} account login to qc site")
+    public void account_login_to_qc_site(String actor) {
         loginSteps.openBrowser();
         loginSteps.changeLanguage("English");
-        loginSteps.inputEmail("gurusupport@testing.qc");
-        loginSteps.inputPass("abc123");
-        loginSteps.clickBtnLogin();
+        loginSteps.loginQCSite(actor);
         System.out.println("Login success");
     }
 }
