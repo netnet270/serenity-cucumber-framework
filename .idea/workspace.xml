@@ -5,21 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6f9a154-ebf9-4723-b072-13723f8cf8ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/coccoc/AM/common/Common.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coccoc/AM/common/LoadObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serenity.properties" beforeDir="false" afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coccoc/AM/page/authen/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coccoc/AM/page/authen/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coccoc/AM/steps/authen/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coccoc/AM/steps/authen/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/coccoc/AM/definition/authen/LoginDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/coccoc/AM/definition/authen/LoginDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/coccoc/DefinitionTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/coccoc/DefinitionTestSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/campaigns/newtab/CampaignNewTabSkin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/campaigns/newtab/CampaignNewTabSkin.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
