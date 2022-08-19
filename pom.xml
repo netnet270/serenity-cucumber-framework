@@ -27,6 +27,11 @@
         <name>bintray</name>
         <url>http://jcenter.bintray.com</url>
       </repository>
+        <repository>
+            <id>maven_central</id>
+            <name>Maven Central</name>
+            <url>https://repo.maven.apache.org/maven2/</url>
+        </repository>
     </repositories>
     <pluginRepositories>
       <pluginRepository>
@@ -86,6 +91,13 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.7</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.23.1</version>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>
