@@ -1,6 +1,6 @@
 package coccoc.AM.page.clients;
 
-import net.thucydides.core.pages.PageObject;
+public class ClientsPage {
 
-public class ClientsPage extends PageObject {
+    public static String xpathTab = "//a[text()='%s']";
 }

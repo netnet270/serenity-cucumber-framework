@@ -1,7 +1,5 @@
 package coccoc.AM.common;
 
-import com.gargoylesoftware.htmlunit.ScriptException;
-import javafx.beans.binding.BooleanExpression;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.By;
@@ -19,6 +17,7 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalUnit;
 import java.util.*;
@@ -64,7 +63,7 @@ public class Common extends PageObject {
 
     public void highlightElement(String xpath) {
         try {
-            ((JavascriptExecutor) getDriver()).executeScript("arguments[0].style.border='3px solid red'",
+            ((JavascriptExecutor) getDriver()).executeScript("arguments[0].style.border='1px solid red'",
                     findBy(xpath));
         } catch (Exception e) {
         }
@@ -86,7 +85,7 @@ public class Common extends PageObject {
         return element(xpath).getText();
     }
 
-    public int getSize(String xpath){
+    public int getSize(String xpath) {
         return findAll(xpath).size();
     }
 
@@ -94,7 +93,7 @@ public class Common extends PageObject {
         return element(xpath).getAttribute(attribute);
     }
 
-    public String getCssValue(String xpath, String css){
+    public String getCssValue(String xpath, String css) {
         waitForElementToPresent(xpath);
         highlightElement(xpath);
         return element(xpath).getCssValue(css);
@@ -107,7 +106,7 @@ public class Common extends PageObject {
     }
 
     public void clickButton(String button, int index) {
-        clickOnElement("(//button[text()='" + button + "'])[" + index + "]");
+        clickOnElement("(//button[text()='" + button + "' or descendant::span[text()='" + button + "']])[" + index + "]");
     }
 
     public void clickOnButton(String button) {
@@ -121,7 +120,7 @@ public class Common extends PageObject {
                 return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
             }
         };
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(pageLoadCondition);
     }
 
@@ -163,7 +162,7 @@ public class Common extends PageObject {
         waitExplicit.until(ExpectedConditions.not(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(xpath))));
     }
 
-    public void waitForElementClickable(String xpath){
+    public void waitForElementClickable(String xpath) {
         waitExplicit = new WebDriverWait(getDriver(), 10);
         waitExplicit.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
     }
@@ -200,7 +199,7 @@ public class Common extends PageObject {
         return isPresent;
     }
 
-    public void uploadFile(String fileName, String xpath){
+    public void uploadFile(String fileName, String xpath) {
 
     }
 
@@ -317,4 +316,15 @@ public class Common extends PageObject {
     }
 
 
+    public void navigateToMenu(String menu) {
+        clickOnElement("//a[child::div[text()='" + menu + "']]");
+    }
+
+    public void inputDataToFieldWithLabel(String label, String value) {
+        sendKeyToElement("//input[@placeholder='" + label + "']", value);
+    }
+
+    public void clickOnLinkWithLabel(String label) {
+        clickOnElement("//a[text()='" + label + "']");
+    }
 }

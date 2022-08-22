@@ -11,11 +11,15 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <serenity.version>2.0.81</serenity.version>
-        <serenity.maven.version>2.0.81</serenity.maven.version>
-        <serenity.cucumber.version>1.0.30</serenity.cucumber.version>
-        <cucumber.version>4.8.0</cucumber.version>
-        <webdrivermanager.version>4.1.0</webdrivermanager.version>
+<!--        <serenity.version>2.0.81</serenity.version>-->
+<!--        <serenity.maven.version>2.0.81</serenity.maven.version>-->
+<!--        <serenity.cucumber.version>1.0.30</serenity.cucumber.version>-->
+<!--        <cucumber.version>4.8.0</cucumber.version>-->
+        <serenity.version>3.0.2</serenity.version>
+        <serenity.maven.version>3.0.2</serenity.maven.version>
+        <serenity.cucumber.version>2.5.7</serenity.cucumber.version>
+        <cucumber.version>6.10.0</cucumber.version>
+        <webdrivermanager.version>5.2.0</webdrivermanager.version>
     </properties>
 
     <repositories>
@@ -68,7 +72,7 @@
         </dependency>
         <dependency>
             <groupId>net.serenity-bdd</groupId>
-            <artifactId>serenity-cucumber4</artifactId>
+            <artifactId>serenity-cucumber6</artifactId>
             <version>${serenity.cucumber.version}</version>
         </dependency>
         <dependency>

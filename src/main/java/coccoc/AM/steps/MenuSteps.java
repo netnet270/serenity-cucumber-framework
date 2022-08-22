@@ -1,2 +1,4 @@
-package coccoc.AM.steps;public class MenuSteps {
+package coccoc.AM.steps;
+
+public class MenuSteps {
 }

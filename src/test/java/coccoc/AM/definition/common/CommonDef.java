@@ -1,5 +1,6 @@
-package coccoc.AM.common;
+package coccoc.AM.definition.common;
 
+import coccoc.AM.common.Common;
 import io.cucumber.java.en.Then;
 import net.thucydides.core.annotations.Steps;
 

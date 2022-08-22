@@ -1,11 +1,16 @@
 package coccoc.AM.definition.campaigns;
 
+import coccoc.AM.steps.campaigns.CampaignsListSteps;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import net.thucydides.core.annotations.Steps;
 
 public class CampaignsListDef {
-    @Then("create campaigns with data")
-    public void create_campaigns_with_data() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
+
+    @Steps
+    CampaignsListSteps campaignsListSteps;
+    @Given("click create campaign")
+    public void click_create_campaign() {
+        campaignsListSteps.clickBtnCreateCampaign();
     }
 }

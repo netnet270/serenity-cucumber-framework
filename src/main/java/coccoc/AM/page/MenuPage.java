@@ -1,2 +1,4 @@
-package coccoc.AM.page;public class MenuPage {
+package coccoc.AM.page;
+
+public class MenuPage {
 }

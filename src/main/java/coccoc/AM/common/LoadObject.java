@@ -1,10 +1,8 @@
 package coccoc.AM.common;
 
 import net.serenitybdd.core.environment.EnvironmentSpecificConfiguration;
-import net.thucydides.core.util.EnvironmentVariables;
 import net.thucydides.core.util.SystemEnvironmentVariables;
-
-import java.io.File;
+import net.thucydides.core.util.EnvironmentVariables;
 
 public class LoadObject {
     public static String osName = System.getProperty("os.name");

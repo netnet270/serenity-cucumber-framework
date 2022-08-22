@@ -6,7 +6,6 @@ import coccoc.AM.page.authen.LoginPage;
 
 public class LoginSteps extends Common {
 
-    LoginPage loginPage;
     public void openBrowser() {
         openBrowserWithURL("https://testing.qc.coccoc.com");
     }
