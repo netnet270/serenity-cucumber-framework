@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6f9a154-ebf9-4723-b072-13723f8cf8ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/driver/CocCocdriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serenity.properties" beforeDir="false" afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/coccoc/AM/definition/campaigns/CampaignCreateDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/coccoc/AM/definition/campaigns/CampaignCreateDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/campaigns/newtab/CampaignNewTabSkin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/campaigns/newtab/CampaignNewTabSkin.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
