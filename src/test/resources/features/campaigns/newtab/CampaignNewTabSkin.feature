@@ -9,6 +9,6 @@ Feature: Campaign new tab skin
     And choose the position of your ads is "Skin"
     And choose your type of campaign is "Browser Skin"
     And input data campaigns to create
-      | Campaign name | Time period | Bid strategy               | Daily limit    | Max impressions by user | Delivery type | Stats tracking | Industry                    | Charge type               |
-      | A123          | @time       | Automated with daily limit | By impressions | Limited                 | Accelerated   |                | FINANCE INDUSTRY: Insurance | Custom Skin with no video |
+      | Campaign name           | Time period | Bid strategy               | Daily limit    | Max impressions by user | Delivery type | Stats tracking | Industry                    | Charge type               |
+      | newtab_skin_browserskin | @time       | Automated with daily limit | By impressions | Limited                 | Accelerated   |                | FINANCE INDUSTRY: Insurance | Custom Skin with no video |
 

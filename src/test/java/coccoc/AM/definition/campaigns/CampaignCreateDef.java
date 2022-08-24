@@ -31,18 +31,36 @@ public class CampaignCreateDef {
 
     @Given("input data campaigns to create")
     public void input_data_campaigns_to_create(DataTable dataTable) {
-        List<Map<String,String>> data = dataTable.asMaps(String.class, String.class);
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         for (Map<String, String> row : data) {
             String timePeriod = row.get("Time period");
             String campaignName = row.get("Campaign name");
-            System.out.println(campaignName);
             String bidStrategy = row.get("Bid strategy");
             String dailyLimit = row.get("Daily limit");
+            String maxImpressionsByUser = row.get("Max impressions by user");
+            String deliveryType = row.get("Delivery type");
+            String statsTracking = row.get("Stats tracking");
+            String industry = row.get("Industry");
+            String chargeType = row.get("Charge type");
+
             campaignCreateSteps.inputDataToFieldWithLabel("Enter campaign name", campaignName + campaignCreateSteps.randomInteger());
-            if(timePeriod.contains("@")){
+            if (timePeriod.contains("@")) {
                 String today = campaignCreateSteps.getTodayByFormat("dd/MM/yyyy");
                 timePeriod = campaignCreateSteps.addDays(today, 1, "dd/MM/yyyy");
+                campaignCreateSteps.inputTimePeriod(timePeriod);
             }
+            if(!bidStrategy.isEmpty()){
+                campaignCreateSteps.selectBidStrategy(bidStrategy);
+            }
+
+            if(!dailyLimit.isEmpty()){
+                campaignCreateSteps.selectDailyLimit(dailyLimit);
+            }
+
+            if(!maxImpressionsByUser.isEmpty()){
+                campaignCreateSteps.selectMaxImpressionsByUser(maxImpressionsByUser);
+            }
+
         }
     }
 }

@@ -16,4 +16,24 @@ public class CampaignCreateSteps extends Common {
         clickOnElement(String.format(CampaignCreatePage.xpathType, type));
     }
 
+    public void inputTimePeriod(String timePeriod) {
+        sendKeyToElement(CampaignCreatePage.xpathTimePeriod, timePeriod);
+    }
+
+    public void selectValueDropDownList(String field, String value){
+        clickOnElement(String.format(CampaignCreatePage.xpathDataField, field));
+        clickOnElement(String.format(CampaignCreatePage.xpathOptionValue, value));
+    }
+
+    public void selectBidStrategy(String bidStrategy) {
+        selectValueDropDownList("bid_strategy", bidStrategy);
+    }
+
+    public void selectDailyLimit(String dailyLimit) {
+        selectValueDropDownList("daily_limit_type", dailyLimit);
+    }
+
+    public void selectMaxImpressionsByUser(String maxImpressionsByUser) {
+        selectValueDropDownList("is_user_impressions_limited", maxImpressionsByUser);
+    }
 }
